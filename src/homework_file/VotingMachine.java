@@ -7,27 +7,30 @@ public class VotingMachine
     private int numberNoVotes;
     private String votingIssue;
 
-    public voteYes()
+    public void voteYes()
+
     {
         numberYesVotes++;
     }
 
-    public voteNo()
+    public void voteNo ()
     {
         numberNoVotes++;
     }
 
-    public returnYesCount()
+    public int returnYesCount()
+
     {
         return numberYesVotes;
     }
 
-    public returnNoCount()
+    public int returnNoCount()
+
     {
         return numberNoVotes;
     }
 
-    public clearMachine()
+    public void clearMachine()
     {
         numberYesVotes = 0;
         numberNoVotes = 0;
