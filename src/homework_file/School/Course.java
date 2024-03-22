@@ -4,18 +4,13 @@ public class Course
 
 
 {
-    private String Department;
-    private int CourseNumber;
-    private int CreditHours;
-
-    private String CourseName;
+    private final String Department;
+    private final int CourseNumber;
 
     public Course(String Department, int CourseNumber, int CreditHours, String CourseName)
     {
         this.Department = Department;
         this.CourseNumber = CourseNumber;
-        this.CreditHours = CreditHours;
-        this.CourseName = CourseName;
     }
 
     public String toString()
@@ -45,6 +40,45 @@ public class Course
     protected Course getDepartment() {
         return this;
     }
+
+    // Homework 5 Question 2 - Built in sort
+
+
+//    public int compareTo(Course other) {
+//        if (this.Department.equals(other.Department)) {
+//            return this.CourseNumber - other.CourseNumber;
+//        } else {
+//            return this.Department.compareTo(other.Department);
+//        }
+//    }
+//
+//    // testing the compareTo method above
+//
+//    public static void main(String[] args) {
+//        Course c1 = new Course("CS",101, 3, "Intro to CS");
+//        Course c2 = new Course("CS", 102, 3, "Data Structures");
+//        Course c3 = new Course("Math", 101, 3, "Calculus");
+//        Course c4 = new Course("Math", 102, 3, "Algebra");
+//
+//        System.out.println(c1.compareTo(c2)); // should return a negative number
+//        System.out.println(c2.compareTo(c1)); // should return a positive number
+//        System.out.println(c1.compareTo(c1)); // should return 0
+//        System.out.println(c3.compareTo(c4)); // should return a negative number
+//        System.out.println(c4.compareTo(c3)); // should return a positive number
+//
+//    }
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 
